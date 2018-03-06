@@ -6,7 +6,6 @@ class Writer(models.Model):
     date_death=models.DateTimeField('date of Death')
     Contact=models.URLField("Enter URL")
     Bio=models.TextField("About")
-    Books=models.ManyToOneRel()
 
 
 class Book(models.Model):
