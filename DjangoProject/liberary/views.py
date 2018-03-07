@@ -5,7 +5,7 @@ from .models import Book
 
 
 def book_view(request):
-    model=Book
+
 
     book_list = Book.objects.all()
     context = {

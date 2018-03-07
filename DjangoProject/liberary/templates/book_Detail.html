@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
- <li>
-        <a >{{ temp }}</a> ({{temp.id}})
-     {{ temp.sammary }}  {{ temp.date_publish}}  {{ temp.country }}  {{ temp.link }}
- </li>
+<h1>Book Details</h1>
+ <table class="table table-bordered ">
+        <tr>
+            <td>BooK Name</td>
+             <td>Summary</td>
+            <td>Writer</td>
+            <td>Publish Date</td>
+            <td>Country</td>
+            <td>Link</td>
+        </tr>
+        <tr>
+            <td>{{ temp }}</td>
+            <td> {{ temp.sammary }} </td>
+             <td> <a href="">{{ temp.Writer }}</a></td>
+            <td>{{ temp.date_publish.year}} </td>
+            <td>{{ temp.country }}</td>
+            <td><a href="{{ temp.link }}">{{ temp.link }}</a></td>
+        </tr>
+
+
+
+ </table>
 </body>
 </html>
